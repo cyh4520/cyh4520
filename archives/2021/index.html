@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   
-  <title>Hexo</title>
+  <title>archive_a: 2021   | Hexo</title>
 
   
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -77,42 +77,50 @@
 
 
       <div class="flex-container">
-        <div class="container index">
+        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+
+<!-- last: 按年份把文章分组，当前遍历到的年份 -->
+<!-- now: 当前遍历到的文章的发布年份 -->
+
+<div class="container archives">
   <div class="post-list">
-    <!-- 遍历渲染文章 -->
     
+    
+      
+        <!-- 第一篇文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2021</span>
+          </h2>
+        </div>
+      
       <div class="post-item" title="test">
-        <div class="time-m-d">2021-01-10</div>
+        <div class="time-m-d">01-10</div>
         <div class="title">
           <a href="/2021/01/10/test/">
-            
-              
-                <span>test</span>
-              
-            
+            <span>test</span>
           </a>
         </div>
       </div>
     
+      
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2020</span>
+          </h2>
+        </div>
+      
       <div class="post-item" title="Hello World">
-        <div class="time-m-d">2020-12-24</div>
+        <div class="time-m-d">12-24</div>
         <div class="title">
           <a href="/2020/12/24/hello-world/">
-            
-              
-                <span>Hello World</span>
-              
-            
+            <span>Hello World</span>
           </a>
         </div>
       </div>
     
   </div>
-  <nav class="post-navigation">
-    
-    <span class="page-num">1 / 1</span>
-    
-  </nav>
 </div>
 
         <div class="footer">
